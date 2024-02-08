@@ -9,7 +9,10 @@ import Cookie from 'js-cookie';
 export default function Home() {
   useEffect(() => {
     gradient.initGradient('#gradient-canvas');
-    Cookie.set('myCookie', 'cookieValue', { expires: 7, path: '/' });
+    Cookie.set('flag', 'Q09ERV9DVEZ7d0hPX3NUT2xlX01ZX0NPb0tJRX0=', {
+      expires: 7,
+      path: '/',
+    });
   }, []);
 
   return (
