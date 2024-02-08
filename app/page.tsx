@@ -4,10 +4,12 @@ import Link from 'next/link';
 import { AnimatePresence, motion } from 'framer-motion';
 import { gradient } from '@/components/Gradient';
 import { useEffect } from 'react';
+import Cookie from 'js-cookie';
 
 export default function Home() {
   useEffect(() => {
     gradient.initGradient('#gradient-canvas');
+    Cookie.set('myCookie', 'cookieValue', { expires: 7, path: '/' });
   }, []);
 
   return (
